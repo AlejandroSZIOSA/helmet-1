@@ -3,7 +3,10 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 //3 Router
-import { Route, Switch, Link } from "react-router-dom";
+//Fix: Switch mot "Routes"
+import { Route, Routes, Link } from "react-router-dom";
+import Home from "./component/Home.jsx";
+import About from "./component/About.jsx";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -22,10 +25,10 @@ function App() {
         </nav>
       </header>
       <main>
-        <Switch>
+        <Routes>
           <Route exact path="/" Component={Home} />
           <Route exact path="/about" Component={About} />
-        </Switch>
+        </Routes>
       </main>
     </div>
   );
