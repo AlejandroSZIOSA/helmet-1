@@ -11,7 +11,7 @@ const generateRobotsTxt = () => {
   } else {
     content += "Disallow:*/n";
   }
-  fs.writeFileSync("./public/js/robots.txt", content);
+  fs.writeFileSync("./public/robots.txt", content);
 };
 generateRobotsTxt();
 
