@@ -11,6 +11,8 @@ const generateRobotsTxt = () => {
   } else {
     content += "Disallow:*/n";
   }
+
+  //Can Add more rules Here
   fs.writeFileSync("./public/robots.txt", content);
 };
 generateRobotsTxt();
