@@ -5,17 +5,18 @@ import "./App.css";
 import { Route, Routes, Link } from "react-router-dom";
 import Home from "./component/Home.jsx";
 import About from "./component/About.jsx";
-/* import styled from "styled-components"; */
+import styled from "styled-components";
 
-/* const Container = styled.div`
-  background: "red";
-`; */
+const Container = styled.div`
+  background-color: red;
+`;
+
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <div>
-      <header>
+      <Container>
         <nav>
           <ul>
             <li>
@@ -24,7 +25,7 @@ function App() {
             </li>
           </ul>
         </nav>
-      </header>
+      </Container>
       <main>
         <Routes>
           <Route exact path="/" Component={Home} />
